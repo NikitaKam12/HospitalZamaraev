@@ -1,0 +1,40 @@
+﻿<Page x:Class="HospitalZamaraev.Pages.ServicesPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ServicesPage">
+
+    <Grid>
+        <TextBlock Text="Доступные Услуги" FontSize="24" FontWeight="Bold" 
+                   HorizontalAlignment="Center" Margin="10"/>
+
+        <StackPanel Margin="20,75,20,20">
+            <Border BorderBrush="Gray" BorderThickness="1" Margin="5" CornerRadius="5">
+                <StackPanel Margin="10">
+                    <TextBlock Text="1. Осмотр людей" FontWeight="SemiBold" FontSize="16"/>
+                    <TextBlock Text="Краткое описание: Общий осмотр, анализ состояния здоровья." 
+                               TextWrapping="Wrap"/>
+                </StackPanel>
+            </Border>
+
+            <Border BorderBrush="Gray" BorderThickness="1" Margin="5" CornerRadius="5">
+                <StackPanel Margin="10">
+                    <TextBlock Text="2. Комплексное лечение" FontWeight="SemiBold" FontSize="16"/>
+                    <TextBlock Text="Краткое описание: Индивидуальный подход и лечение заболеваний." 
+                               TextWrapping="Wrap"/>
+                </StackPanel>
+            </Border>
+
+            <Border BorderBrush="Gray" BorderThickness="1" Margin="5" CornerRadius="5">
+                <StackPanel Margin="10">
+                    <TextBlock Text="3. Психологическая консультация" FontWeight="SemiBold" FontSize="16"/>
+                    <TextBlock Text="Краткое описание: Поддержка и помощь в сложных ситуациях." 
+                               TextWrapping="Wrap"/>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Page>
