@@ -9,6 +9,13 @@
       Title="MyRecordsPage">
 
     <Grid>
-        
+        <DataGrid x:Name="RecordsDataGrid" AutoGenerateColumns="False" SelectionChanged="RecordsDataGrid_SelectionChanged" Margin="0,30,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Доктор" Binding="{Binding username}" />
+                <DataGridTextColumn Header="Время записи" Binding="{Binding appointment_time}" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Content="Удалить запись" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10" Click="DeleteRecord_Click"/>
     </Grid>
 </Page>

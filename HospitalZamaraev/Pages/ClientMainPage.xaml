@@ -23,6 +23,8 @@
                     Style="{StaticResource RoundButtonStyle}"/>
             <Button Content="Мои записи" Click="MyRecordsButton_Click" Margin="5" Height="50" 
                     Style="{StaticResource RoundButtonStyle}"/>
+            <Button Content="Назад" Click="Back_Click" Margin="5" Height="50" 
+        Style="{StaticResource RoundButtonStyle}"/>
         </StackPanel>
 
         <!-- Основное содержимое -->

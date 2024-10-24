@@ -31,8 +31,13 @@ namespace HospitalZamaraev.Pages
 
         private void MyRecordsButton_Click(object sender, RoutedEventArgs e)
         {
-            // Здесь нужно будет реализовать загрузку страницы с записями клиента
-            // MainFrame.Navigate(new MyRecordsPage());
+            
+             MainFrame.Navigate(new MyRecordsPage());
+        }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
         }
     }
 }
