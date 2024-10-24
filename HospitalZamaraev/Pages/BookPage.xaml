@@ -13,12 +13,14 @@
         <TextBlock Text="Запись на прием" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10,0,20" />
 
         <!-- Выбор врача -->
+        <!-- Выбор врача -->
         <TextBlock Text="Выберите врача:" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,60,0,0" />
         <ComboBox x:Name="DoctorPicker" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,60,0,0" Width="200" SelectionChanged="DoctorPicker_SelectionChanged"/>
 
         <!-- Выбор даты -->
         <TextBlock Text="Выберите дату:" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,120,0,0" />
-        <DatePicker x:Name="DatePicker" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,120,0,0" Width="200" />
+        <DatePicker x:Name="DatePicker" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,120,0,0" Width="200" SelectedDateChanged="DatePicker_SelectedDateChanged"/>
+
 
         <!-- Выбор времени -->
         <TextBlock Text="Выберите время:" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,180,0,0" />
@@ -28,7 +30,7 @@
         <Button Content="Записаться" Width="150" Height="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,40" Click="BookAppointment_Click" />
 
         <!-- Информация о докторе -->
-        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,60,20,0" Width="300">
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,53,0,0" Width="290">
             <TextBlock Text="Информация о враче" FontSize="16" FontWeight="Bold" Margin="0,0,0,10" />
             <TextBlock x:Name="DoctorInfo" Text="Имя и специализация врача появятся здесь" FontSize="14" />
         </StackPanel>
