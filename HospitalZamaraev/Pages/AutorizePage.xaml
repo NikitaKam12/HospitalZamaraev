@@ -9,7 +9,9 @@
       Title="Авторизация">
 
     <Grid>
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="350">
+        <TextBlock Text="Добро пожаловать в приложение записи в больницу" FontSize="25" FontWeight="Bold" TextAlignment="Center" Margin="0,0,0,20"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="250">
+            
             <TextBlock Text="Авторизация" FontSize="18" FontWeight="Bold" TextAlignment="Center" Margin="0,0,0,20"/>
 
             <TextBlock Text="Введите логин:"/>
@@ -18,8 +20,8 @@
             <TextBlock Text="Введите пароль:"/>
             <PasswordBox x:Name="Psswrd_box" Margin="0,0,0,20"/>
 
-            <Button Content="Авторизоваться" Click="Autorize_Click" Margin="0,0,0,10"/>
-            <Button Content="Зарегистрироваться" Click="Register_Click"/>
+            <Button Content="Авторизоваться" Click="Autorize_Click" Margin="0,0,0,10" Style="{StaticResource RoundButtonStyle}"/>
+            <Button Content="Зарегистрироваться" Click="Register_Click" Style="{StaticResource RoundButtonStyle}"/>
         </StackPanel>
     </Grid>
 </Page>
